@@ -13,11 +13,7 @@ Text Domain: amuga-hide-a2-notices
 
 if( !function_exists( 'a2_notice_removal_css' ) ){
 	function a2_notice_removal_css() {
-		echo '<style>
-		#bookmark-login, #editing-locked{
-			display:none;
-		}
-		</style>';
+		echo '<style>#bookmark-login,#editing-locked{display:none;}</style>';
 	}
 	add_action( 'admin_head', 'a2_notice_removal_css' );
 }
